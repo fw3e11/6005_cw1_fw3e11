@@ -9,5 +9,62 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-%:
-	dh $@ 
+# I use Debhelper 7 without override_*, so comment the two lines below.
+# %:
+#	dh $@ 
+
+script = $(CURDIR)/usr/bin/cw1-6005-fw3e11
+conf = $(CURDIR)/etc/cw1-6005-fw3e11/feeds.conf
+index = $(CURDIR)/usr/share/cw1-6005-fw3e11/index.php
+rssphp = $(CURDIR)/usr/share/cw1-6005-fw3e11/rss_php.php
+
+DESTUSR = $(CURDIR)/debian/cw1-6005-fw3e11/usr
+DESTETC = $(CURDIR)/debian/cw1-6005-fw3e11/etc
+
+build:
+	dh_testdir
+	touch build
+
+clean:
+	dh_testdir
+	dh_testroot
+	rm -f build
+	dh_clean
+
+install: build clean $(script) $(conf) $(index) $(rssphp)
+	dh_testdir
+	dh_testroot
+	dh_prep
+	dh_installdirs
+
+	mkdir -m 755 -p $(DEST)/usr/share/cw1-6005-fw3e11
+	mkdir -m 755 -p $(DEST)/usr/bin
+	mkdir -m 755 -p $(DEST)/etc/cw1-6005-fw3e11
+
+	install -m 644 $(index) $(DESTUSR)/share/cw1-6005-fw3e11
+	install -m 644 $(rssphp) $(DESTUSR)/share/cw1-6005-fw3e11
+	install -m 755 $(script) $(DESTUSR)/bin
+	install -m 644 $(conf) $(DESTETC)/cw1-6005-fw3e11
+
+# Build architecture-independent files here.
+binary-indep: build install
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs
+	dh_installdocs
+	dh_installexamples
+	dh_installdebconf
+	dh_installman
+	dh_link
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+# Build architecture-dependent files here.
+binary-arch: build install
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install
