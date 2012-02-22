@@ -1,4 +1,8 @@
-cw1-6005-fw3e11 (1.0.3) stable; urgency=low
+cw1-6005-fw3e11 (1.0.4) unstable; urgency=low
+  * Correct bugs when running command 'cw1-6005-fw3e11' (because of mistyping php into $php)
+ -- Feng Wang <fw3e11@ecs.soton.ac.uk>  Wed, 22 Feb 2012 15:31:46 +0000
+
+cw1-6005-fw3e11 (1.0.3) unstable; urgency=low
   * Make the command 'cw1-6005-fw3e11' to useful
  -- Feng Wang <fw3e11@ecs.soton.ac.uk>  Wed, 22 Feb 2012 15:31:46 +0000
 
