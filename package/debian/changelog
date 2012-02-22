@@ -1,5 +1,7 @@
+cw1-6005-fw3e11 (1.0.1) stable; urgency=low
+  * Ready to package
+ -- Feng Wang <fw3e11@ecs.soton.ac.uk>  Wed, 22 Feb 2012 14:16:22 +0000
+
 package (1.0.0) unstable; urgency=low
-
   * Initial Release.
-
  -- Feng Wang <fw3e11@ecs.soton.ac.uk>  Wed, 22 Feb 2012 10:29:52 +0000
