@@ -37,9 +37,9 @@ install: build clean $(script) $(conf) $(index) $(rssphp)
 	dh_prep
 	dh_installdirs
 
-	mkdir -m 755 -p $(DEST)/usr/share/cw1-6005-fw3e11
-	mkdir -m 755 -p $(DEST)/usr/bin
-	mkdir -m 755 -p $(DEST)/etc/cw1-6005-fw3e11
+	mkdir -m 755 -p $(DESTUSR)/share/cw1-6005-fw3e11
+	mkdir -m 755 -p $(DESTUSR)/bin
+	mkdir -m 755 -p $(DESTETC)/cw1-6005-fw3e11
 
 	install -m 644 $(index) $(DESTUSR)/share/cw1-6005-fw3e11
 	install -m 644 $(rssphp) $(DESTUSR)/share/cw1-6005-fw3e11
