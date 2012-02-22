@@ -1,4 +1,9 @@
-cw1-6005-fw3e11 (1.0.1) stable; urgency=low
+cw1-6005-fw3e11 (1.0.2) unstable; urgency=low
+  * Debug the control file, Depends (from 'php' to 'php5').
+  * Debug the rules file, which may lead build error.
+ -- Feng Wang <fw3e11@ecs.soton.ac.uk>  Wed, 22 Feb 2012 15:08:32 +0000
+
+cw1-6005-fw3e11 (1.0.1) unstable; urgency=low
   * Ready to package
  -- Feng Wang <fw3e11@ecs.soton.ac.uk>  Wed, 22 Feb 2012 14:16:22 +0000
 
