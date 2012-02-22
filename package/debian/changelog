@@ -1,3 +1,7 @@
+cw1-6005-fw3e11 (1.0.3) stable; urgency=low
+  * Make the command 'cw1-6005-fw3e11' to useful
+ -- Feng Wang <fw3e11@ecs.soton.ac.uk>  Wed, 22 Feb 2012 15:31:46 +0000
+
 cw1-6005-fw3e11 (1.0.2) unstable; urgency=low
   * Debug the control file, Depends (from 'php' to 'php5').
   * Debug the rules file, which may lead build error.
