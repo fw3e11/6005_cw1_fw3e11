@@ -13,7 +13,7 @@ Install:
 	dpkg -i cw1-6005-fw3e11.deb
 
 Usage:
-	cw1-6005-fw3e11 # which equals 'php index.php'
+	get_news # which equals 'php index.php'
 
 ==============================
 The author is Feng Wang (fw3e11)
