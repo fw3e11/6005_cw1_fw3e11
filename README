@@ -10,7 +10,12 @@
 
 ==============================
 Install:
-	dpkg -i cw1-6005-fw3e11.deb
+	run 'dpkg -i cw1-6005-fw3e11.deb'
+	if permission denied, you need run 'sudo dpkg -i cw1-6005-fw3e11.deb'
+  or
+	run 'sudo apt-get -f install' to install dependencies beforehand,
+  or
+	run 'sudo apt-get install php5-cli', to be exact.
 
 Usage:
 	get_news # which equals 'php index.php'
