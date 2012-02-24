@@ -24,6 +24,7 @@ Usage:
 Note:
 
   In the beginning of this coursework, I think control and rules files are the most important and difficult part because the 'debian maintainers guide' is too much to read and to understand, before I found a Debian Package Tutorial authored by Lucas Nussbaum. Then I was focusing on the hierarchical file systems, so I had to change the index.php code in the aspect of feeds.conf when the 'No feeds sepecified' appeared. I made some mistakes at that time. I also need a command to run the programme after install the .deb file so I google 'unix shell language'.
+  All in one, /debian/control file is some basic infomation to package, /debian/rules file is to tell what to do when running .deb file, and /debian/changelog is a log as well as a version control. The code needs some modification because of the hierarchy file systems. Finally, google is a good tool to aquire knowledge and to fix problems.
   Updated changelog is a record reflecting my progress all the way. The history of the commits in github can be found in https://github.com/fw3e11/6005_cw1_fw3e11/commits/master.
 
 ==============================
