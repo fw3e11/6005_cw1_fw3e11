@@ -1,5 +1,6 @@
 ==============================
 # The upstream software code is a clone of https://github.com/info6005/6005_cw1_2012
+# The package can be cloned from hppts://github.com/info6005/6005_cw1_fw3e11, whose commits can also be found to show my evidence using of change management systems.
 
 ==============================
 # This software is a simple RSS feeds Reader written in PHP.
@@ -10,15 +11,20 @@
 
 ==============================
 Install:
-	run 'dpkg -i cw1-6005-fw3e11.deb'
-	if permission denied, you need run 'sudo dpkg -i cw1-6005-fw3e11.deb'
+  If you have installed php (>=5) already
+
+	run 'sudo dpkg -i cw1-6005-fw3e11.deb'
   or
-	run 'sudo apt-get -f install' to install dependencies beforehand,
-  or
-	run 'sudo apt-get install php5-cli', to be exact.
+	run 'sudo apt-get -f install' to install dependencies beforehand.
 
 Usage:
 	get_news # which equals 'php index.php'
+
+==============================
+Note:
+
+  In the beginning of this coursework, I think control and rules files are the most important and difficult part because the 'debian maintainers guide' is too much to read and to understand, before I found a Debian Package Tutorial authored by Lucas Nussbaum. Then I was focusing on the hierarchical file systems, so I had to change the index.php code in the aspect of feeds.conf when the 'No feeds sepecified' appeared. I made some mistakes at that time. I also need a command to run the programme after install the .deb file so I google 'unix shell language'.
+  Updated changelog is a record reflecting my progress all the way. The history of the commits in github can be found in https://github.com/fw3e11/6005_cw1_fw3e11/commits/master.
 
 ==============================
 The author is Feng Wang (fw3e11)

@@ -1,3 +1,8 @@
+cw1-6005-fw3e11 (1.1.1) stable; urgency=low
+  * Updated Depends (in control file) from php5 to php5-cli.
+  * Modified README file, ready to be marked.
+ -- Feng Wang <fw3e11@ecs.soton.ac.uk>  Wed, 22 Feb 2012 18:19:27 +0000
+
 cw1-6005-fw3e11 (1.1.0) stable; urgency=low
   * The command is now 'get_news' instead of 'cw1-6005-fw3e11'.
  -- Feng Wang <fw3e11@ecs.soton.ac.uk>  Wed, 22 Feb 2012 19:24:27 +0000
